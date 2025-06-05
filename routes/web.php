@@ -18,15 +18,14 @@ Route::middleware('auth')->group(function () {
     Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
 });
 
- Route::get('/admin', function () {
-        return redirect()->route('dashboard');
-    });
+Route::get('/admin', function () {
+    return redirect()->route('dashboard');
+});
 
-     // About All Route
-    Route::controller(RoomController::class)->group(function () {
-        Route::get('/room/list', 'index')->name('rooms.list');
-
-    });
-
+// Group all RoomController routes under 'auth' and 'verified' middleware
+Route::middleware(['auth', 'verified'])->controller(RoomController::class)->group(function () {
+    Route::get('/room/list', 'index')->name('rooms.list');
+    // Add more RoomController routes here if needed
+});
 
 require __DIR__.'/auth.php';
