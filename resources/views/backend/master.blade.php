@@ -46,7 +46,7 @@
 
 
 
- @yield('main')
+        @yield('main')
 
 
 
