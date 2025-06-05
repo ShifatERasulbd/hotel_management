@@ -26,7 +26,7 @@
             <div class="row align-items-stretch">
                 <div class="col-md-6 mb-3 sidebar-menu-box">
                     <div class=" shadow-lg rounded-4 p-3">
-                        <a href="{{ route('dashboard') }}" class="nav-item nav-link d-flex flex-column align-items-center p-0">
+                        <a href="{{ route('dashboard') }}" class="nav-item nav-link d-flex flex-column align-items-center p-0 active">
                             <!-- Dashboard SVG -->
                             <svg viewBox="0 0 16 16">
                                 <path d="M3 13h2v-2H3v2zm0-4h2V7H3v2zm4 4h2v-2H7v2zm0-4h2V7H7v2zm4 4h2v-2h-2v2zm0-4h2V7h-2v2z"/>
