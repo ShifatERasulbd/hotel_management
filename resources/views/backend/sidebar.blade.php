@@ -38,7 +38,7 @@
                 </div>
                 <div class="col-md-6 mb-3 sidebar-menu-box ">
                     <div class="shadow-lg rounded-4 p-3">
-                        <a href="" class="nav-item nav-link d-flex flex-column align-items-center p-0">
+                        <a href="{{ route('rooms.list') }}" class="nav-item nav-link d-flex flex-column align-items-center p-0">
                             <!-- Bed SVG -->
                             <svg viewBox="0 0 16 16">
                                 <path d="M2 1a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1H2zm0 1h12v12H2V2zm2 2a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm8 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm-8 4h8v4H4V8z"/>
