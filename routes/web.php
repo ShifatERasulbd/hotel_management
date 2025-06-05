@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\ProfileController;
+use App\Http\Controllers\RoomController;
 use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
@@ -16,6 +17,16 @@ Route::middleware('auth')->group(function () {
     Route::patch('/profile', [ProfileController::class, 'update'])->name('profile.update');
     Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
 });
+
+ Route::get('/admin', function () {
+        return redirect()->route('dashboard');
+    });
+
+     // About All Route
+    Route::controller(RoomController::class)->group(function () {
+        Route::get('/room/list', 'index')->name('rooms.list');
+
+    });
 
 
 require __DIR__.'/auth.php';
