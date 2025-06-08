@@ -39,9 +39,9 @@ return [
             'driver' => 'session',
             'provider' => 'users',
         ],
-        'admin' => [
+        'manager' => [
             'driver' => 'session',
-            'provider' => 'admins',
+            'provider' => 'managers',
         ],
     ],
 
@@ -67,9 +67,9 @@ return [
             'driver' => 'eloquent',
             'model' => App\Models\User::class,
         ],
-        'admins' => [
+        'managers' => [
             'driver' => 'eloquent',
-            'model' => App\Models\Admin::class,
+            'model' => App\Models\Manger::class,
         ],
     ],
 

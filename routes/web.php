@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\ManagerController;
 use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\RoomController;
 use Illuminate\Support\Facades\Route;
@@ -26,6 +27,12 @@ Route::get('/admin', function () {
 Route::middleware(['auth', 'verified'])->controller(RoomController::class)->group(function () {
     Route::get('/room/list', 'index')->name('rooms.list');
     // Add more RoomController routes here if needed
+});
+
+// Manager routes (only accessible to authenticated managers)
+Route::middleware(['auth:manager'])->prefix('manager')->name('manager.')->group(function () {
+    Route::get('/dashboard', [ManagerController::class, 'dashboard'])->name('dashboard');
+    // Add more manager-only routes here
 });
 
 require __DIR__.'/auth.php';
