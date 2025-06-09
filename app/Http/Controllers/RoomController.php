@@ -22,6 +22,7 @@ class RoomController extends Controller
     public function create()
     {
         //
+         return view('backend.rooms.create');
     }
 
     /**

@@ -97,47 +97,10 @@
 
             <!-- Recent Sales Start -->
             <div class="container-fluid pt-4 px-4">
-                <div class="d-flex justify-content-end mb-2">
-                    <!-- Button trigger modal -->
-                    <button type="button" class="btn btn-danger btn-lg" data-bs-toggle="modal" data-bs-target="#addRoomModal">
-                        Add Room
-                    </button>
-                </div>
-
-                <!-- Add Room Modal -->
-                <div class="modal fade" id="addRoomModal" tabindex="-1" aria-labelledby="addRoomModalLabel" aria-hidden="true">
-                  <div class="modal-dialog">
-                    <div class="modal-content">
-                      <div class="modal-header">
-                        <h5 class="modal-title" id="addRoomModalLabel">Add Room</h5>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                      </div>
-                      <div class="modal-body">
-                        <!-- Add your form fields here -->
-                        <form>
-                          <div class="mb-3">
-                            <label for="roomName" class="form-label">Room Name</label>
-                            <input type="text" class="form-control" id="roomName" placeholder="Enter room name">
-                          </div>
-                          <div class="mb-3">
-                            <label for="roomPrice" class="form-label">Price</label>
-                            <input type="number" class="form-control" id="roomPrice" placeholder="Enter price">
-                          </div>
-                          <!-- Add more fields as needed -->
-                        </form>
-                      </div>
-                      <div class="modal-footer">
-                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                        <button type="button" class="btn btn-primary">Save Room</button>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
                 <div class="bg-secondary text-center rounded p-4">
                     <div class="d-flex align-items-center justify-content-between mb-4">
-                        <h6 class="mb-0">Recent Sales</h6>
-                        <a href="" class="btn btn-primary">Show All</a>
+                        <h6 class="mb-0">Recent Salse</h6>
+                        <a href="">Show All</a>
                     </div>
                     <div class="table-responsive">
                         <table class="table text-start align-middle table-bordered table-hover mb-0">
